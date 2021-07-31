@@ -1,29 +1,9 @@
 body {
-    margin: 0;
-    background-color: rgb(32, 35, 42);
-}
-
-#head {
-    background-color: rgb(36, 37, 38);
-    height: 60px;
+    background-color: rgb(239, 234, 231);
     margin: 0;
 }
 
-div {
-    background-color: rgb(43, 49, 55);
-    height: 450px;
-}
+#CyroLogo{
+    width: 347px;
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    margin: 0;
-    margin-left: 16%;
-    padding-top: 3%;
-    font-size: 60px;
-}
-
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 }
