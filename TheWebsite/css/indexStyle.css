@@ -3,7 +3,37 @@ body {
     margin: 0;
 }
 
-#CyroLogo{
-    width: 347px;
+header {
+    display: block;
+    text-align: center;
+}
+
+#CyroLogo {
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 300px;
+}
+
+header h1 {
+    margin:0 31px 0 0;
+    font-size: 70px;
+    font-family: 'Centaur';
+    color: rgb(141, 61, 61);
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+header h2{
+    margin:0 31px 0 0;
+    font-size: 30px;
+    font-family: 'Semilight' ;
+    color: rgb(51, 4, 4);
+    font-weight: 100;
+    letter-spacing: 10px;
 
 }
+@font-face {
+    font-family: 'Semilight';
+    src: url("../Media/font/segoeuisl.ttf");
+}
+
