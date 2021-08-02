@@ -6,7 +6,7 @@ body {
 header {
     display: block;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 7%;
 }
 
 #CyroLogo {
@@ -15,7 +15,7 @@ header {
 }
 
 header h1 {
-    margin:0 31px 0 0;
+    margin: 0 31px 0 0;
     font-size: 70px;
     font-family: 'Centaur';
     color: rgb(141, 61, 61);
@@ -23,17 +23,29 @@ header h1 {
     letter-spacing: 10px;
 }
 
-header h2{
-    margin:0 31px 0 0;
+header h2 {
+    margin: 0 31px 0 0;
     font-size: 30px;
-    font-family: 'Semilight' ;
+    font-family: 'Semilight';
     color: rgb(51, 4, 4);
     font-weight: 100;
     letter-spacing: 10px;
-
 }
+
+#description1 {
+    margin: 500px 0 0 120px;
+}
+
+#description1 h1 {
+    font-family: Leelawadee UI;
+    font-weight: 600;
+    letter-spacing: 30px;
+    line-height: 140px;
+    font-size: 110px;
+    width: 700px;
+}
+
 @font-face {
     font-family: 'Semilight';
     src: url("../Media/font/segoeuisl.ttf");
 }
-
