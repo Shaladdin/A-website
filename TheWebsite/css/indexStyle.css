@@ -6,11 +6,11 @@ body {
 header {
     display: block;
     text-align: center;
+    margin-top: 150px;
 }
 
 #CyroLogo {
     margin: 0 auto;
-    margin-top: 150px;
     width: 300px;
 }
 
