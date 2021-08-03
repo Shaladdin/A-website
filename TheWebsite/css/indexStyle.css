@@ -49,9 +49,9 @@ header h2 {
 #left_description p {
     font-family: Lucida Sans Typewriter;
     font-size: 25px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-style: Oblique;
-    color:#1D0505;
+    color: #1D0505;
 }
 
 @font-face {
