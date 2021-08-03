@@ -33,25 +33,37 @@ header h2 {
 }
 
 #description1 {
-    margin: 500px 0 500px 130px;
+    margin: 500px 0 500px 250px;
+    display: flex;
 }
 
-#left_description h1 {
+#TextDescription h1 {
     font-family: Leelawadee UI;
     font-weight: 500;
-    letter-spacing: 30px;
-    font-size: 110px;
-    width: 700px;
-    line-height: 110px;
+    letter-spacing: 20px;
+    font-size: 90px;
+    width: 500px;
+    line-height:85px;
     margin-bottom: 75px;
 }
 
-#left_description p {
+#TextDescription p {
     font-family: Lucida Sans Typewriter;
-    font-size: 25px;
-    letter-spacing: 1px;
+    font-size: 17.5px;
+    letter-spacing: 2px;
     font-style: Oblique;
     color: #1D0505;
+}
+
+#BoxesSVG{
+    position: absolute;
+    right: 0;
+}
+
+#BoxesSVG img {
+    display: block;
+    height: 250px;
+    position: relative;
 }
 
 @font-face {
