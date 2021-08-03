@@ -33,16 +33,25 @@ header h2 {
 }
 
 #description1 {
-    margin: 500px 0 0 120px;
+    margin: 500px 0 500px 130px;
 }
 
-#description1 h1 {
+#left_description h1 {
     font-family: Leelawadee UI;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 30px;
-    line-height: 140px;
     font-size: 110px;
     width: 700px;
+    line-height: 110px;
+    margin-bottom: 75px;
+}
+
+#left_description p {
+    font-family: Lucida Sans Typewriter;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-style: Oblique;
+    color:#1D0505;
 }
 
 @font-face {
