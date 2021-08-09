@@ -33,7 +33,7 @@ header h2 {
 }
 
 #description1 {
-    margin: 500px 0 500px 250px;
+    margin: 500px 0 300px 250px;
     display: flex;
 }
 
@@ -43,7 +43,7 @@ header h2 {
     letter-spacing: 20px;
     font-size: 90px;
     width: 500px;
-    line-height:85px;
+    line-height: 85px;
     margin-bottom: 75px;
 }
 
@@ -55,15 +55,41 @@ header h2 {
     color: #1D0505;
 }
 
-#BoxesSVG{
+#BoxesSVG {
     position: absolute;
     right: 0;
+    margin-right:10px;
 }
 
 #BoxesSVG img {
     display: block;
-    height: 250px;
+    height: 230px;
     position: relative;
+}
+
+#BoxesSVG #nan1 {
+    right: 310px;
+}
+
+#BoxesSVG #D {
+    bottom: 100px;
+    right: 230px;
+}
+
+#BoxesSVG #B {
+    height: 220px;
+    right: 420px;
+    bottom: 335px;
+}
+
+#BoxesSVG #T {
+    bottom: 460px;
+    right: 360px;
+}
+
+#BoxesSVG #nan2 {
+    bottom: 650px;
+    right: 180px;
 }
 
 @font-face {
