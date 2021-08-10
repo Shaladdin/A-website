@@ -33,14 +33,18 @@ header h2 {
 }
 
 #description1 {
-    margin: 500px 0 300px 250px;
+    margin: 500px 0 0px 15%;
     display: flex;
+}
+
+#TextDescription {
+    padding: 0px;
 }
 
 #TextDescription h1 {
     font-family: Leelawadee UI;
     font-weight: 500;
-    letter-spacing: 20px;
+    letter-spacing: 22px;
     font-size: 90px;
     width: 500px;
     line-height: 85px;
@@ -56,9 +60,10 @@ header h2 {
 }
 
 #BoxesSVG {
-    position: absolute;
-    right: 0;
-    margin-right:10px;
+    position: relative;
+    left: 350px;
+    margin-right: 10px;
+    height: 100px;
 }
 
 #BoxesSVG img {
@@ -68,28 +73,82 @@ header h2 {
 }
 
 #BoxesSVG #nan1 {
-    right: 310px;
+    right: 130px;
 }
 
 #BoxesSVG #D {
     bottom: 100px;
-    right: 230px;
+    right: 50px;
 }
 
 #BoxesSVG #B {
     height: 220px;
-    right: 420px;
+    right: 240px;
     bottom: 335px;
 }
 
 #BoxesSVG #T {
     bottom: 460px;
-    right: 360px;
+    right: 180px;
 }
 
 #BoxesSVG #nan2 {
     bottom: 650px;
-    right: 180px;
+    right: 0px;
+}
+
+#ScrolingTextToFlex {
+    margin: 400px 0;
+}
+
+#ScrolingTextToFlex h2 {
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 6px;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    border: solid #000000;
+    color: #5B1F1F;
+    width: 530px;
+    text-shadow: 0 3px 6px #0000003d;
+}
+
+#bottom h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    letter-spacing: 8px;
+    font-weight: 100;
+    color: #2B1919;
+    text-align: center;
+    text-shadow: -5px 3px 6px #0000002a;
+}
+
+.card {
+    display: flex;
+    margin: 0 16%;
+    justify-content: space-between;
+}
+
+.card div {
+    background-color: #FFDFD5;
+    width: 280px;
+    height: 360px;
+    box-shadow: -15px 0 15px #00000020;
+}
+
+.card div img {
+    display: block;
+    width: 90px;
+    margin: 25px auto;
+}
+
+#blanket {
+    background-color: #FFEAE4;
+    width: 280px;
+    height: 220px;
+    box-shadow: 0 -5px 15px #00000020;
 }
 
 @font-face {
