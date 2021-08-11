@@ -115,7 +115,7 @@ header h2 {
     text-shadow: 0 3px 6px #0000003d;
 }
 
-#bottom h1 {
+#Offer {
     font-family: 'Times New Roman', Times, serif;
     font-size: 80px;
     letter-spacing: 8px;
@@ -151,9 +151,19 @@ header h2 {
     box-shadow: 0 -5px 15px #00000020;
 }
 
-.card div #blanket h1{
-
+.card div #blanket h1 {
+    margin: 0;
 }
+
+#blanket h1 {
+    font-family: 'Leelawadee UI';
+    font-size: 24px;
+    margin-left: 8px;
+}
+
+#blanket ul {}
+
+#blanket ul li {}
 
 footer {
     position: relative;
@@ -168,12 +178,13 @@ footer {
 }
 
 #blanket {
+    color: #2B1919;
     background-color: #CCA5A5;
     height: 964px;
     width: 100%;
 }
 
-#blanket h1 {
+footer #blanket h1 {
     position: relative;
     top: 276px;
     margin: 0;
