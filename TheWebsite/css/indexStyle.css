@@ -7,6 +7,7 @@ header {
     display: block;
     text-align: center;
     margin-top: 7%;
+    margin-bottom: 500px;
 }
 
 #CyroLogo {
@@ -15,7 +16,7 @@ header {
 }
 
 header h1 {
-    margin: 0 31px 0 0;
+    margin: 0;
     font-size: 70px;
     font-family: 'Centaur';
     color: rgb(141, 61, 61);
@@ -24,7 +25,7 @@ header h1 {
 }
 
 header h2 {
-    margin: 0 31px 0 0;
+    margin: 0;
     font-size: 30px;
     font-family: 'Semilight';
     color: rgb(51, 4, 4);
@@ -32,8 +33,55 @@ header h2 {
     letter-spacing: 10px;
 }
 
+nav {
+    /* Safari */
+    text-align: center;
+    padding:0 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -15px;
+    font-family: "Lucida Sans Typewriter";
+    font-style: Oblique;
+    z-index: 100;
+    background: #EFE9E7;
+    border-color: #C5BEBE;
+    border-width: 15px 0 15px 0;
+    border-style: solid none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+#midleNav {
+    font-style: normal;
+    letter-spacing: 7px;
+    font-family: Leelawadee UI;
+    font-size: 25px;
+    color: #8D3D3D
+}
+
+nav ul li a {
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: #5A1010;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav ul li a img {
+    width: 55px;
+}
+
 #description1 {
-    margin: 500px 0 0px 15%;
+    margin: 300px 0 0px 15%;
     display: flex;
 }
 
@@ -133,8 +181,8 @@ header h2 {
 
 .card div {
     background-color: #FFDFD5;
-    width: 280px;
-    height: 360px;
+    width: 300px;
+    height: 450px;
     box-shadow: -15px 0 15px #00000020;
 }
 
@@ -145,25 +193,30 @@ header h2 {
 }
 
 .card div #blanket {
+    font-family: 'Leelawadee UI';
     background-color: #FFEAE4;
-    width: 280px;
-    height: 220px;
+    width: 100%;
+    height: 300px;
     box-shadow: 0 -5px 15px #00000020;
 }
 
 .card div #blanket h1 {
+    font-size: 30px;
     margin: 0;
-}
-
-#blanket h1 {
-    font-family: 'Leelawadee UI';
-    font-size: 24px;
     margin-left: 8px;
+    padding-top: 10px;
+    letter-spacing: 2px;
 }
 
-#blanket ul {}
+#blanket ul {
+    padding-left: 35px;
+}
 
-#blanket ul li {}
+#blanket ul li {
+    font-size: 21px;
+    letter-spacing: 4px;
+    line-height: 40px;
+}
 
 footer {
     position: relative;
