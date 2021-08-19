@@ -59,7 +59,7 @@ window.addEventListener("scroll", function () {
         TextToFlexes[1].style.left = pos + 'px';
     }
     {
-        card.style.opacity = mapping(y, 2400, 2800, 0, 100) + '%';
+        card.style.opacity = mapping(y, 2500, 2800, 0, 100) + '%';
     }
 
 });

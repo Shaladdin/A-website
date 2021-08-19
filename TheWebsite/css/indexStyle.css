@@ -115,6 +115,7 @@ nav ul li a img {
 
 #TextDescription {
     transition: margin 50ms;
+    padding-left: 15%;
     padding: 0px;
     opacity: 0;
 }
@@ -265,7 +266,7 @@ footer {
 #blanket {
     color: #2B1919;
     background-color: #CCA5A5;
-    height: 964px;
+    height: 1000px;
     width: 100%;
 }
 
