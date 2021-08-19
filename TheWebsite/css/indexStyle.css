@@ -1,13 +1,40 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #EFE9E7;
     margin: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #EFE9E7;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #EFE9E7;
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #C5BEBE;
+    /* creates padding around scroll thumb */
 }
 
 header {
     display: block;
     text-align: center;
     margin-top: 7%;
-    margin-bottom: 500px;
 }
 
 #CyroLogo {
@@ -34,25 +61,25 @@ header h2 {
 }
 
 nav {
+    opacity: 0;
     /* Safari */
     text-align: center;
-    padding:0 100px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: -15px;
+    top: -0;
+    width: 100%;
+    position: fixed;
     font-family: "Lucida Sans Typewriter";
     font-style: Oblique;
     z-index: 100;
     background: #EFE9E7;
     border-color: #C5BEBE;
-    border-width: 15px 0 15px 0;
+    border-width: 0 0 20px 0;
     border-style: solid none;
 }
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    margin: 0;
+    margin: 0 150px;
 }
 
 nav ul li {
@@ -69,24 +96,27 @@ nav ul li {
 }
 
 nav ul li a {
-    letter-spacing: 3px;
-    font-size: 18px;
+    letter-spacing: 2px;
+    font-size: 16px;
     color: #5A1010;
     margin: 0 10px;
     text-decoration: none;
+    font-weight: 100;
 }
 
 nav ul li a img {
-    width: 55px;
+    width: 50px;
 }
 
 #description1 {
-    margin: 300px 0 0px 15%;
+    margin: 600px 0 0px 0;
     display: flex;
 }
 
 #TextDescription {
+    transition: margin 50ms;
     padding: 0px;
+    opacity: 0;
 }
 
 #TextDescription h1 {
@@ -107,10 +137,9 @@ nav ul li a img {
 }
 
 #BoxesSVG {
-    position: relative;
-    left: 350px;
-    margin-right: 10px;
+    position: absolute;
     height: 100px;
+    right: 12vw;
 }
 
 #BoxesSVG img {
@@ -119,30 +148,22 @@ nav ul li a img {
     position: relative;
 }
 
-#BoxesSVG #nan1 {
-    right: 130px;
-}
-
 #BoxesSVG #nan3 {
     bottom: 100px;
-    right: 30px;
     height: 225px;
 }
 
 #BoxesSVG #B {
     height: 220px;
-    right: 240px;
     bottom: 335px;
 }
 
 #BoxesSVG #T {
     bottom: 460px;
-    right: 180px;
 }
 
 #BoxesSVG #nan2 {
     bottom: 650px;
-    right: 0px;
 }
 
 #ScrolingTextToFlex {
@@ -154,13 +175,24 @@ nav ul li a img {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 6px;
     font-size: 30px;
-    margin: 0 auto;
+    margin: 143px auto;
     padding: 5px 0;
     text-align: center;
     border: solid #000000;
     color: #5B1F1F;
     width: 530px;
     text-shadow: 0 3px 6px #0000003d;
+}
+
+.weee {
+    position: relative;
+    font-size: 120px;
+    font-weight: 500;
+    color: #5B1F1F;
+    text-decoration: underline;
+    text-align: center;
+    letter-spacing: 40px;
+    white-space: nowrap;
 }
 
 #Offer {
