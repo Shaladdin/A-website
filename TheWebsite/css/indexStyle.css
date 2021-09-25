@@ -10,25 +10,27 @@ body {
     background-color: #EFE9E7;
     margin: 0;
     overflow-x: hidden;
+    height: 100vh;
 }
+
+/* html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+} */
 
 body::-webkit-scrollbar {
     width: 12px;
-    /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
     background: #EFE9E7;
-    /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #EFE9E7;
-    /* color of the scroll thumb */
     border-radius: 5px;
-    /* roundness of the scroll thumb */
     border: 3px solid #C5BEBE;
-    /* creates padding around scroll thumb */
 }
 
 header {
