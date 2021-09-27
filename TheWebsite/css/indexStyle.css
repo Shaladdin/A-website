@@ -1,42 +1,8 @@
-* {
-    scroll-behavior: smooth;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: #EFE9E7;
-    margin: 0;
-    overflow-x: hidden;
-    height: 100vh;
-}
-
-/* html, body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden
-} */
-
-body::-webkit-scrollbar {
-    width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-    background: #EFE9E7;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #EFE9E7;
-    border-radius: 5px;
-    border: 3px solid #C5BEBE;
-}
 
 header {
     display: block;
     text-align: center;
-    margin-top: 7%;
+    padding-top: 7%;
 }
 
 #CyroLogo {
