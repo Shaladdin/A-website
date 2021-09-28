@@ -10,7 +10,7 @@ var prefMargin_TextDes = 0;
 var pref_ops = 0;
 
 
-OS[OS.length] = function () {
+OS = function () {
     DebugPrint(y_window);
     if (y_window >= 500) {
         nav.style.transition = 0.1 + 's';
