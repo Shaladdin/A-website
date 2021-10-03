@@ -1,8 +1,8 @@
-let nav = document.getElementsByTagName("nav")[0];
 let TextDescription = document.getElementById("TextDescription");
 let boxes = [document.getElementById("nan1"), document.getElementById("nan3"), document.getElementById("B"), document.getElementById("T"), document.getElementById("nan2")];
 let TextToFlexes = document.getElementsByClassName("weee");
 let card = document.getElementsByClassName("card")[0];
+
 
 let boxesDestenation = [130, 30, 240, 180, 0];
 let boxesStartNoice = [3, 4, 1, 2, 5];
@@ -10,16 +10,7 @@ var prefMargin_TextDes = 0;
 var pref_ops = 0;
 
 
-OS = function () {
-    DebugPrint(y_window);
-    if (y_window >= 500) {
-        nav.style.transition = 0.1 + 's';
-        nav.style.opacity = mapping(y_window, 500, 800, 0, 100) + '%';
-        nav.style.pointerEvents = 'auto';
-    } else {
-        nav.style.opacity = 0
-        nav.style.pointerEvents = 'none';
-    };
+OS[OS.length] = function () {
     {
         let ops = mapping(y_window, 0, 900, 0, 100);
         let x = mapping(y_window, 100, 900, -10, 15);

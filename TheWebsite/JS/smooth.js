@@ -7,11 +7,12 @@ const option = {
 
 const scroll = Scrollbar.init(document.querySelector('.smooth'), option)
 
-var OS;
+var OS = [];
 scroll.addListener(function (status) {
     const g = { x, y, z } = getTranslateValues(document.querySelector('.scroll-content'))
     y_window = -g.y;
 
-    OS();
+    for (let i = 0; i < OS.length; i++)
+        OS[i]();
 
 })

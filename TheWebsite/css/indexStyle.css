@@ -28,21 +28,7 @@ header h2 {
     letter-spacing: 10px;
 }
 
-nav {
-    opacity: 0;
-    /* Safari */
-    text-align: center;
-    top: -0;
-    width: 100%;
-    position: fixed;
-    font-family: "Lucida Sans Typewriter";
-    font-style: Oblique;
-    z-index: 100;
-    background: #EFE9E7;
-    border-color: #C5BEBE;
-    border-width: 0 0 20px 0;
-    border-style: solid none;
-}
+
 
 nav ul {
     display: flex;
