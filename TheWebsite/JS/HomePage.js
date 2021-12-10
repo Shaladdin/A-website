@@ -4,17 +4,22 @@ let TextToFlexes = document.getElementsByClassName("weee");
 let card = document.getElementsByClassName("card")[0];
 
 
-let boxesDestenation = [130, 30, 240, 180, 0];
+let boxesDestenation = [-110, -210, 0, -60, -240];
 let boxesStartNoice = [3, 4, 1, 2, 5];
-var prefMargin_TextDes = 0;
+var prefMargin_TextDes = -30;
 var pref_ops = 0;
 
+// var box = document.getElementById("BoxesSVG");
+// window.addEventListener('resize', function (event) {
+//     box.style.transition = 'all 1s'
+//     // box.style.opacity = (window.innerWidth < 1297 ? 0 : 100) + '%';
+// })
 
 OS[OS.length] = function () {
     {
         let ops = mapping(y_window, 0, 900, 0, 100);
-        let x = mapping(y_window, 100, 900, -10, 15);
-        let margin_TextDes = (x > 15 ? 15 : x);
+        let x = mapping(y_window, 100, 900, -30, 0);
+        let margin_TextDes = (x > 0 ? 0 : x);
         TextDescription.style.left = Math.max(prefMargin_TextDes, margin_TextDes) + '%';
         TextDescription.style.opacity = Math.max(pref_ops, ops) + '%';
         prefMargin_TextDes = Math.max(prefMargin_TextDes, margin_TextDes);

@@ -2,6 +2,7 @@ header {
     display: block;
     text-align: center;
     padding-top: 7%;
+    margin-bottom: 600px;
 }
 
 #CyroLogo {
@@ -11,15 +12,16 @@ header {
 
 
 #description1 {
-    margin: 600px 0 0px 0;
+    margin: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 50px 85px;
 }
 
 #TextDescription {
-    transition: margin 50ms;
+    margin-left: 10px;
     position: relative;
     padding: 0px;
     opacity: 0;
@@ -34,15 +36,13 @@ header {
 }
 
 #BoxesSVG {
-    text-align: right;
-    position: absolute;
+    width: 450px;
     height: 500px;
-    width: 400px;
-    right: 0;
     margin-bottom: 0px;
 }
 
 #BoxesSVG img {
+    margin: 0;
     display: block;
     height: 230px;
     position: relative;
@@ -73,7 +73,7 @@ header {
 #ScrolingTextToFlex h2 {
     font-weight: 100;
     font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     font-size: 30px;
     margin: 143px auto;
     padding: 5px 0;
@@ -193,17 +193,43 @@ header {
     font-size: 57px;
     color: #CBCCCD;
     text-shadow: none;
+    letter-spacing: 4px;
 }
 
 #contachMeee #content {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px 150px;
+}
+
+#content div input {
+    width: 360px;
+    height: 35px;
+    border: 2px solid #D8D8D8;
+    background-color: #483E3E;
+}
+
+#content div #bigBoye {
+    height: 100px;
+}
+
+input {
+    text-align: left;
+    color: #D8D8D8;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #D8D8D8;
+    box-shadow: 0 0 5px #d8d8d8a1;
 }
 
 @font-face {
     font-family: 'Semilight';
     src: url("../Media/font/segoeuisl.ttf");
 }
-
 
 :root {
     /* local var: */
