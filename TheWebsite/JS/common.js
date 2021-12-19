@@ -59,7 +59,7 @@
 
 OS[OS.length] = function () {
     DebugPrint(y_window);
-    nav.style.top = y_window + ofset + 'px'
+    nav.style.top = y_window + 'px'
     if (y_window >= 500) {
         let i = mapping(y_window, 500, 800, 0, 100);
         nav.style.opacity = (i > 100 ? 100 : i) + '%';

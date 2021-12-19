@@ -1,0 +1,23 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "Here if you have a note, leave it here:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shaladdin/BoxlessCrative.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shaladdin/BoxlessCrative/issues"
+  },
+  "homepage": "https://github.com/Shaladdin/BoxlessCrative#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

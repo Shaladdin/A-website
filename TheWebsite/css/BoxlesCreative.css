@@ -57,6 +57,7 @@ h2 img {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 60px;
 }
 
 h5 {
@@ -86,4 +87,14 @@ p {
     margin: 0;
     margin-top: -4px;
     padding: 0;
+}
+
+@media screen and (max-width:630px) {
+    #about h5 {
+        text-align: center;
+    }
+
+    #about div p {
+        text-align: center;
+    }
 }
