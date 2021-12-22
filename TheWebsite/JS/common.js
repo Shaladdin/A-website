@@ -56,7 +56,6 @@
 }
 
 
-
 OS[OS.length] = function () {
     DebugPrint(y_window);
     nav.style.top = y_window + ofset + 'px'
