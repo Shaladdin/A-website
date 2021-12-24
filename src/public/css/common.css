@@ -1,13 +1,18 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    margin: 0;
 }
 
 nav {
     opacity: 0;
     text-align: center;
-    top: -0;
+    top: 10px;
     width: 100%;
     position: relative;
     font-family: "Lucida Sans Typewriter";
@@ -19,18 +24,11 @@ nav {
     border-style: solid none;
 }
 
-* {
-    scroll-behavior: smooth;
-}
 
 #hide-Y {
     opacity: 0%;
 }
 
-body {
-    background-color: #EFE9E7;
-    margin: 0;
-}
 
 body::-webkit-scrollbar {
     width: 12px;
@@ -116,6 +114,16 @@ li .list1 {
     align-items: center;
 }
 
+.hover-selected {
+    position: relative;
+    top: 0px;
+    transition: top 0.5s;
+}
+
+.hover-selected:hover {
+    top: -30px;
+}
+
 /* Nav */
 nav {
     height: 64px;
@@ -171,7 +179,7 @@ footer {
     padding-bottom: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 100px;
 }
@@ -197,6 +205,20 @@ footer a img {
 #footer-gap {
     width: 1px;
     height: 1px;
+}
+
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #ffffff77
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 1025px) {

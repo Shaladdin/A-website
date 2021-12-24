@@ -1,3 +1,7 @@
+body {
+    background-color: #EFE9E7;
+}
+
 header {
     display: block;
     text-align: center;
@@ -97,6 +101,7 @@ header {
     height: 450px;
     box-shadow: -15px 0 15px #00000020;
 }
+
 
 .card div img {
     display: block;
@@ -205,14 +210,31 @@ header {
 }
 
 #content div input {
+    font-family: 'Times New Roman', Times, serif;
+    color: #CBCCCD;
     width: 360px;
     height: 35px;
     border: 2px solid #D8D8D8;
     background-color: #483E3E;
+    font-size: 20px;
 }
 
-#content div #bigBoye {
+#content div textarea {
     height: 100px;
+    width: 360px;
+    border: 2px solid #D8D8D8;
+    background-color: #483E3E;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #CBCCCD;
+    font-weight: 100;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none !important;
+    border-color: #D8D8D8;
+    box-shadow: 0 0 5px #d8d8d8a1;
 }
 
 input {
