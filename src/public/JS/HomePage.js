@@ -44,3 +44,27 @@ OS[OS.length] = function () {
     }
 
 };
+
+
+// fungtion for sending msg to api with post request
+function sendMsg() {
+    // get data from input in index.html
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var msg = document.getElementById('massage').value;
+
+    data = {
+        "name": name,
+        "email": email,
+        "massage": msg
+    }
+    const options = {
+        headers: { "Content-Type": "application/json" },
+        method: 'POST',
+        body: JSON.stringify(data)
+    };
+
+    fetch('/send_massage', options).then(response => {
+        console.log(response);
+    });
+}
