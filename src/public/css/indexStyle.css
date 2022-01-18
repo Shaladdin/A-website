@@ -220,7 +220,6 @@ header {
 }
 
 #content div textarea {
-    height: 100px;
     width: 360px;
     border: 2px solid #D8D8D8;
     background-color: #483E3E;
@@ -229,6 +228,8 @@ header {
     color: #CBCCCD;
     font-weight: 100;
     resize: none;
+    min-height: 100px;
+    /*max-height: 277px; */
 }
 
 textarea:focus {

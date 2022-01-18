@@ -52,11 +52,11 @@ function sendMsg() {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var msg = document.getElementById('massage').value;
-
+    
     data = {
         "name": name,
         "email": email,
-        "massage": msg
+        "message": msg
     }
     const options = {
         headers: { "Content-Type": "application/json" },
@@ -68,3 +68,13 @@ function sendMsg() {
         console.log(response);
     });
 }
+
+//make expandeble textarea
+var textarea = document.getElementById('massage')
+textarea.scrollHeight = 100;
+var heightLimit = 500;
+
+textarea.oninput = function () {
+    textarea.style.height = ""; /* Reset the height*/
+    textarea.style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
+};

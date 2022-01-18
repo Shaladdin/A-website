@@ -73,6 +73,65 @@ p {
     font-size: 25px;
 }
 
+#mastery {
+    min-height: 571px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 230px;
+}
+
+#mastery #title {
+    max-width: 253px;
+    font-size: 45px;
+    letter-spacing: 7px;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+#mastery #content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 50px;
+    max-width: 530px;
+    justify-content: center;
+}
+
+.appM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+}
+
+.adobe {
+    width: 130px;
+    height: 126px;
+    background-image: url(../Media/Svg/BoxlessCreative-about-page/Hollow_box.svg);
+    background-repeat: no-repeat;
+    font-family: "adobeClean";
+
+    /* centering text */
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+    font-size: 80px;
+    font-weight: bold;
+    color: #883333;
+}
+
+.hex1 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+}
+
+.skillhex {
+    width: 35px;
+}
+
 .Leelawadee {
     color: #8d3d3d;
     font-weight: 500;
@@ -89,6 +148,34 @@ p {
     padding: 0;
 }
 
+#colorPalate {
+    margin-top: -5px;
+    min-height: 40vw;
+    background-color: #572526;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#colorPalate #o1 {
+    background-image: url("../Media/Svg/BoxlessCreative-about-Page/Hexagon.svg");
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#colorPalate .colorhex {
+    height: 269px;
+    width: 234px;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+#colorPalate .colorhex .text {
+    font-family: 'Leelawadee UI';
+    font-size: 30px;
+    transform: rotate(32deg);
+    color: #FF6F59;
+}
+
 @media screen and (max-width:630px) {
     #about h5 {
         text-align: center;
@@ -97,4 +184,9 @@ p {
     #about div p {
         text-align: center;
     }
+}
+
+@font-face {
+    font-family: "adobeClean";
+    src: url("../Media/font/AdobeCleanRegular.otf");
 }

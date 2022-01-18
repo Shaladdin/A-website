@@ -4,8 +4,10 @@
   "description": "Here if you have a note, leave it here:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "api": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "debug": "nodemon --ext *",
+    "debug-index": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,10 @@
     "express": "^4.17.2",
     "nedb": "^1.8.0",
     "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.15"
   }
 }
