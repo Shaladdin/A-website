@@ -1,0 +1,4 @@
+---
+deployment:
+  task:
+  -npm start
