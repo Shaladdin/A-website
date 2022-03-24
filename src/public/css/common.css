@@ -9,26 +9,25 @@ body {
     margin: 0;
 }
 
-nav {
-    opacity: 0;
-    text-align: center;
-    top: 10px;
-    width: 100%;
-    position: relative;
-    font-family: "Lucida Sans Typewriter";
-    font-style: Oblique;
-    z-index: 100;
-    background: #EFE9E7;
-    border-color: #C5BEBE;
-    border-width: 0 0 20px 0;
-    border-style: solid none;
+.overflowPatch {
+    overflow-x: hidden;
 }
+
+/* tooptip */
+.tooltip::before {
+    content: attr(data-tooltip);
+}
+
+/* end of tooltip */
 
 
 #hide-Y {
     opacity: 0%;
 }
 
+a{
+    text-decoration: none;
+}
 
 body::-webkit-scrollbar {
     width: 12px;
@@ -42,70 +41,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #EFE9E7;
     border-radius: 5px;
     border: 3px solid #C5BEBE;
-}
-
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 80px;
-    letter-spacing: 8px;
-    font-weight: 100;
-    color: #2B1919;
-    text-align: center;
-    text-shadow: -5px 3px 6px #0000002a;
-}
-
-h2 {
-    margin: 0;
-    font-size: 70px;
-    font-family: 'Centaur';
-    color: rgb(141, 61, 61);
-    font-weight: 100;
-    letter-spacing: 8px;
-}
-
-h3 {
-    margin: 0;
-    font-size: 30px;
-    font-family: 'Semilight';
-    color: rgb(51, 4, 4);
-    font-weight: 100;
-    letter-spacing: 10px;
-}
-
-h4 {
-    position: relative;
-    font-size: 120px;
-    font-weight: 500;
-    color: #5B1F1F;
-    text-decoration: underline;
-    text-align: center;
-    letter-spacing: 40px;
-    white-space: nowrap;
-}
-
-h5 {
-    font-size: 30px;
-    margin: 0;
-    margin-left: 8px;
-    padding-top: 10px;
-    letter-spacing: 2px;
-}
-
-h6 {
-    font-family: Leelawadee UI;
-    font-weight: 500;
-    letter-spacing: 20px;
-    font-size: 90px;
-    line-height: 85px;
-    margin-bottom: 75px;
-    margin-top: 0;
-}
-
-.h7 {
-    letter-spacing: 1px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #CBCCCD;
 }
 
 /* list */
@@ -126,6 +61,16 @@ li .list1 {
 
 /* Nav */
 nav {
+    opacity: 0;
+    text-align: center;
+    top: 10px;
+    width: 100%;
+    position: relative;
+    font-family: "Lucida Sans Typewriter";
+    font-style: Oblique;
+    z-index: 100;
+    border-width: 0 0 20px 0;
+    border-style: solid none;
     height: 64px;
 }
 
@@ -139,13 +84,11 @@ nav {
     letter-spacing: 7px;
     font-family: Leelawadee UI;
     font-size: 25px;
-    color: #8D3D3D
 }
 
 nav ul li a {
     letter-spacing: 2px;
     font-size: 16px;
-    color: #5A1010;
     margin: 0 10px;
     text-decoration: none;
     font-weight: 100;
@@ -171,54 +114,6 @@ nav ul {
 .flex-break {
     width: 100%;
     height: 0;
-}
-
-footer {
-    background-color: #201717;
-    padding-top: 111px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 100px;
-}
-
-#footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 9px 0;
-}
-
-footer a {
-    text-decoration: none;
-    display: flex;
-    gap: 0 8px;
-    align-items: center;
-}
-
-footer a img {
-    width: 36px;
-    height: 36px;
-}
-
-#footer-gap {
-    width: 1px;
-    height: 1px;
-}
-
-
-textarea::-webkit-scrollbar {
-    width: 8px;
-}
-
-textarea::-webkit-scrollbar-track {
-    background-color: #ffffff77
-}
-
-textarea::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, .5);
-    border-radius: 5px;
 }
 
 @media screen and (max-width: 1025px) {

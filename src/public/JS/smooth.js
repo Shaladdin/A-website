@@ -5,12 +5,40 @@ const option = {
     thumbMinSize: 5
 }
 
-const scroll = Scrollbar.init(document.querySelector('.smooth'), option)
+// see also: https://github.com/idiotWu/react-smooth-scrollbar/issues/15#issuecomment-335047892
+
+class DisableScrollPlugin extends Scrollbar.ScrollbarPlugin {
+  static pluginName = 'disableScroll';
+
+  static defaultOptions = {
+    direction: '',
+  };
+
+  transformDelta(delta) {
+    if (this.options.direction) {
+      delta[this.options.direction] = 0;
+    }
+
+    return { ...delta };
+  }
+}
+
+// load the plugin
+Scrollbar.use(DisableScrollPlugin);
+
+// usage
+const scroll = Scrollbar.init(document.querySelector('.smooth'), {
+  plugins: {
+    disableScroll: {
+      direction: 'x',
+    },
+  },
+});
+
 
 var OS = [];
 scroll.addListener(function (status) {
-    const g = { x, y, z } = getTranslateValues(document.querySelector('.scroll-content'))
-    y_window = -g.y;
+    y_window = scroll.scrollTop;
 
     for (let i = 0; i < OS.length; i++)
         OS[i]();

@@ -3,6 +3,7 @@ let boxes = [document.getElementById("nan1"), document.getElementById("nan3"), d
 let TextToFlexes = document.getElementsByClassName("weee");
 let card = document.getElementsByClassName("card")[0];
 
+var flexOfset = 182;
 
 let boxesDestenation = [-110, -210, 0, -60, -240];
 let boxesStartNoice = [3, 4, 1, 2, 5];
@@ -36,7 +37,7 @@ OS[OS.length] = function () {
     {
         let x = 1500;
         let pos = mapping(y_window, 500, 3500, x, -x);
-        TextToFlexes[0].style.right = pos + 'px';
+        TextToFlexes[0].style.left = pos * -1 - flexOfset + 'px';
         TextToFlexes[1].style.left = pos + 'px';
     }
     {
@@ -52,7 +53,20 @@ function sendMsg() {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var msg = document.getElementById('massage').value;
-    
+
+    let unvalid = 'false';
+    if (msg.length === 0) unvalid = 'massage';
+    if (name.length === 0) unvalid = 'name';
+    if (unvalid !== 'false') {
+        alert(`${unvalid} cannot be empty`);
+        return;
+    }
+
+    if (!validateEmail(email)) {
+        alert(`please input a valid email`);
+        return;
+    }
+
     data = {
         "name": name,
         "email": email,

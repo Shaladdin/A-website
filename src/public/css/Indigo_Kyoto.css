@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --sakura: #E2ADF3;
+    --darkendSakura: #CE9CE5;
+    --indigo: #222A68;
+    --purple: #AB81CD;
+}
+
+body {
+    background-color: var(--sakura);
+    margin: 0;
+}
+
+/* nav colloring */
+nav {
+    background-color: var(--darkendSakura);
+    border-color: var(--indigo);
+}
+
+nav ul li a {
+    color: var(--indigo);
+}
+
+
+
+
+h1, h2, h3 {
+    color: var(--indigo);
+}
+
+h1, h2, h3 {
+    font-family: Arial-Rounded;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+p {
+    font-family: Microsoft Yi Baiti;
+    color: var(--indigo);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+section {
+    width: 100%;
+}
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    margin: 0;
+}
+
+#top {
+    min-height: 73vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -85px;
+}
+
+#top #midle {
+    display: block;
+    width: 45vw;
+    height: 45vw;
+    background-image: url("../Media/Svg/indigoKyoto\ page/backflow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#top #midle div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vw;
+}
+
+#mainlogo {
+    width: 169px;
+}
+
+#description {
+    min-height: 480px;
+    background-color: var(--purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#description h1 {
+    font-size: 65px;
+    text-align: center;
+}
+
+#description p {
+    text-align: center;
+    max-width: 700px;
+}
+
+
+#bag {
+    height: 57vw;
+    background-image: url("../Media/img/grapich_media/IndigoKyoto/bag.png");
+}
+
+#mathstuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 700px;
+}
+
+#mathstuff h3 {
+    max-width: 580px;
+    text-align: center;
+}
+
+#mathstuff .a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+#mathstuff .a #bar {
+    width: 350px;
+    height: 8px;
+    background-color: var(--indigo);
+    border-radius: 5px;
+}
+
+#mathstuff .a img {
+    width: 24px;
+    height: 24px;
+}
+
+#equal {
+    width: 99px;
+    height: 20px;
+    position: relative;
+    right: 265px;
+}
+
+#mathstuff #logo {
+    width: 230px;
+    height: 230px;
+    position: relative;
+    top: -30px;
+}
+
+#colorPalate {
+    height: 550px;
+    background-color: #8B57B9;
+    display: flex;
+    justify-content: center;
+}
+
+#colorPalate #flex-thing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 950px;
+    gap: 0px 70px;
+}
+
+#colorPalate #flex-thing div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px 0px;
+}
+
+#colorPalate #flex-thing div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#colorPalate div div div img {
+    width: 114px;
+    height: 130px;
+}
+
+/* coloring time, yaaay /_ \ its like 12 am rn yeah i have brain dmg */
+.a h3 {
+    color: var(--sakura);
+}
+
+.b h3 {
+    color: #654598;
+}
+
+.c h3 {
+    color: var(--purple);
+}
+
+#wall {
+    height: 58.7vw;
+    background-image: url("../Media/img/grapich_media/IndigoKyoto/wall.png");
+}
+
+#logostuff {
+    min-height: 765px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 295px;
+}
+
+#logostuff div.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .braindamage {
+    width: 190px;
+    height: 195px;
+}
+
+
+#logostuff div.left div.idk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.right.main img.braindamage {
+    background-color: var(--indigo);
+}
+
+.right .braindamage {
+    width: 164px;
+    padding: 30px;
+}
+
+
+#fontstuff {
+    min-height: 500px;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 80px;
+    flex-wrap: wrap;
+}
+
+#fontstuff div p {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#arial p {
+    font-family: 'Arial-Rounded';
+}
+
+#backpatch {
+    background-color: var(--purple);
+    width: 100vw;
+}
+
+#back {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-decoration: none;
+    position: relative;
+    top: -50px;
+    right: -50px;
+    border-radius: 5px;
+    width: 173px;
+    height: 43px;
+    transition: all 300ms ease-in-out;
+}
+
+#back:hover {
+    top:-60px;
+}
+
+#back img {
+    width: 30px;
+    height: 30px;
+}
+
+#back h3{
+    font-size: 30px;
+    color: var(--sakura);
+}
+
+@font-face {
+    font-family: 'Arial-Rounded';
+    src: url('../Media/font/Arial-Rounded-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Microsoft Yi Baiti';
+    src: url('../Media/font/MicrosoftYiBaiti.ttf');
+}

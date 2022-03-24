@@ -46,6 +46,7 @@ h2 img {
     justify-content: center;
     flex-wrap: wrap;
     gap: 0px 90px;
+    margin-bottom: 150px;
 }
 
 #about img {
@@ -60,11 +61,15 @@ h2 img {
     margin-bottom: 60px;
 }
 
+#about div p {
+    max-width: 587px;
+}
+
 h5 {
     padding: 0;
     margin: 0;
     font-weight: 100;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 p {
@@ -80,6 +85,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 230px;
+    margin-bottom: 86px;
 }
 
 #mastery #title {
@@ -101,14 +107,14 @@ p {
 .appM {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     row-gap: 8px;
 }
 
 .adobe {
     width: 130px;
     height: 126px;
-    background-image: url(../Media/Svg/BoxlessCreative-about-page/Hollow_box.svg);
+    background-image: url(../Media/Svg/BoxlessCreative-about-Page/Hollow_box.svg);
     background-repeat: no-repeat;
     font-family: "adobeClean";
 
@@ -126,6 +132,9 @@ p {
     display: flex;
     flex-direction: row;
     column-gap: 3px;
+    margin-left: -22px;
+    position: relative;
+    left: 11px;
 }
 
 .skillhex {
@@ -148,18 +157,40 @@ p {
     padding: 0;
 }
 
-#colorPalate {
+#colorPalate_ {
     margin-top: -5px;
-    min-height: 40vw;
-    background-color: #572526;
+    min-height: 627px;
+    background-color: #572525;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#colorPalate {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: center;
+    margin-top: 134px;
 }
 
 #colorPalate #o1 {
     background-image: url("../Media/Svg/BoxlessCreative-about-Page/Hexagon.svg");
-    background-repeat: no-repeat;
-    margin: 0;
+    bottom: 134px;
+    color: #FF6F59;
+}
+
+#colorPalate #o2 {
+    background-image: url("../Media/Svg/BoxlessCreative-about-Page/other-hexagon/Hexagon\ lightWhite.svg");
+    bottom: 104px;
+    color: #6E6F81;
+}
+
+#colorPalate #o3 {
+    background-image: url("../Media/Svg/BoxlessCreative-about-Page/other-hexagon/Hexagon\ DarkBlue.svg");
+    bottom: 78px;
+    color: #6C809A;
 }
 
 #colorPalate .colorhex {
@@ -167,13 +198,60 @@ p {
     width: 234px;
     display: table-cell;
     vertical-align: bottom;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 #colorPalate .colorhex .text {
     font-family: 'Leelawadee UI';
     font-size: 30px;
     transform: rotate(32deg);
-    color: #FF6F59;
+}
+
+.anotherHex {
+    height: 137px;
+    width: 120px;
+    margin: 0px;
+    position: relative;
+    left: 100px;
+    bottom: 108px;
+    background-repeat: no-repeat;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+#colorPalate_ #colorPalate .colorhex .anotherHex .text {
+    font-size: 16px;
+}
+
+#o1 .anotherHex {
+    background-image: url("../Media/Svg/BoxlessCreative-about-Page/other-hexagon/Hexagon\ orange.svg");
+    color: #883333;
+}
+
+#o2 .anotherHex {
+    background-image: url("../Media/Svg/BoxlessCreative-about-Page/other-hexagon/Hexagon\ grey-pair-with-lightwhite.svg");
+    color: #EEE7E5;
+}
+
+#o3 .anotherHex {
+    background-image: url("../Media/Svg/BoxlessCreative-about-Page/other-hexagon/Hexagon\ grey-pair-with-darkBlue3.svg");
+    color: #0A2239;
+}
+
+@media screen and (max-width:700px) {
+    #colorPalate #o1 {
+        bottom: 0;
+    }
+
+    #colorPalate #o2 {
+        bottom: 0;
+    }
+
+    #colorPalate #o3 {
+        bottom: 68px;
+        left: 6px;
+    }
 }
 
 @media screen and (max-width:630px) {

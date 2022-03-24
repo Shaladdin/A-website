@@ -19,6 +19,7 @@ function run() {
         const api = express();
         api.use(express.static(__dirname + '/public'))
         api.use(express.json({ limit: '1mb' }));
+        api.use('/scripts', express.static(__dirname + '/node_modules/smooth-scrollbar/dist'));
 
 
         // // initialize nedb as a database

@@ -37,6 +37,7 @@ header {
     letter-spacing: 2px;
     font-style: Oblique;
     color: #1D0505;
+    max-width: 515px;
 }
 
 #BoxesSVG {
@@ -95,7 +96,7 @@ header {
     flex-wrap: wrap;
 }
 
-.card div {
+.card a {
     background-color: #FFDFD5;
     width: 300px;
     height: 450px;
@@ -103,13 +104,13 @@ header {
 }
 
 
-.card div img {
+.card a img {
     display: block;
     width: 90px;
     margin: 25px auto;
 }
 
-.card div #blanket {
+.card a #blanket {
     font-family: 'Leelawadee UI';
     background-color: #FFEAE4;
     width: 100%;
@@ -172,6 +173,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 18px 16px;
+    max-width: 752px;
+    margin: auto;
+    /* margin-right: 0; */
 }
 
 
@@ -249,12 +253,57 @@ input:focus {
     box-shadow: 0 0 5px #d8d8d8a1;
 }
 
+
+footer {
+    background-color: #201717;
+    padding-top: 111px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 9px 0;
+}
+
+footer a {
+    text-decoration: none;
+    display: flex;
+    gap: 0 8px;
+    align-items: center;
+}
+
+footer a img {
+    width: 36px;
+    height: 36px;
+}
+
+#footer-gap {
+    width: 1px;
+    height: 1px;
+}
+
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #ffffff77
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+}
+
+
 @font-face {
     font-family: 'Semilight';
     src: url("../Media/font/segoeuisl.ttf");
-}
-
-:root {
-    /* local var: */
-    --blanketMargin: 140px;
 }
