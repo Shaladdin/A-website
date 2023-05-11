@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@750&display=swap');
+
+:root {
+    --lightBlue: #CFE5E2;
+    --blue: #568EC1;
+    --darkBlue: #061727;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--lightBlue);
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+section {
+    width: 100%;
+}
+
+.lightBlue h1, .lightBlue h2 {
+    color: var(--blue);
+}
+
+.image {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.darkBlue {
+    color: white;
+    background-color: var(--darkBlue);
+}
+
+h1 {
+    font-size: 130px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+/* nav coloring */
+nav {
+    margin-bottom: -84px;
+    background-color: var(--lightBlue);
+    border-color: var(--blue);
+}
+
+nav ul li a {
+    color: var(--blue);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 770px;
+    gap: 15px 0;
+    margin-bottom: 130px;
+}
+
+#header img {
+    width: 230px;
+    height: 275px;
+}
+
+#coolfont {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coolfont img {
+    width: 666px;
+    height: 185px;
+}
+
+#p {
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#mathstuff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 590px;
+    gap: 0 50px;
+}
+
+#mathstuff div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px 0px;
+}
+
+#highcorection {
+    position: relative;
+    top: 15px;
+}
+
+.operation {
+    width: 85px;
+    height: 85px;
+}
+
+#infinity {
+    width: 290px;
+    height: 161px;
+}
+
+#diamond {
+    width: 215px;
+    height: 140px;
+}
+
+#logo {
+    width: 227px;
+    height: 275px;
+}
+
+#buncoflogo {
+    min-height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 135px;
+}
+
+#buncoflogo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buncoflogo .left {
+    gap: 17px;
+}
+
+#buncoflogo .midle {
+    gap: 15px;
+}
+
+#buncoflogo .right {
+    gap: 33px;
+}
+
+#buncoflogo .left img.a {
+    width: 79px;
+    height: 96px;
+}
+
+#buncoflogo .left img.b {
+    width: 103px;
+    height: 126px;
+}
+
+#buncoflogo .right img {
+    width: 82px;
+    height: 100px;
+    padding: 15px 25px;
+    border-radius: 20px;
+}
+
+#buncoflogo .right img.a {
+    background-color: var(--blue);
+}
+
+#buncoflogo .right img.b {
+    background-color: white;
+}

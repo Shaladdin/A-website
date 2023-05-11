@@ -16,10 +16,12 @@ var pref_ops = 0;
 //     // box.style.opacity = (window.innerWidth < 1297 ? 0 : 100) + '%';
 // })
 
+const sl = 1002;
+
 OS[OS.length] = function () {
     {
-        let ops = mapping(y_window, 0, 900, 0, 100);
-        let x = mapping(y_window, 100, 900, -30, 0);
+        let ops = mapping(y_window, 0, sl, 0, 100);
+        let x = mapping(y_window, 100, sl, -30, 0);
         let margin_TextDes = (x > 0 ? 0 : x);
         TextDescription.style.left = Math.max(prefMargin_TextDes, margin_TextDes) + '%';
         TextDescription.style.opacity = Math.max(pref_ops, ops) + '%';
@@ -28,10 +30,10 @@ OS[OS.length] = function () {
     }
     {
         for (let i = 0; i < boxesDestenation.length; i++) {
-            let right = mapping(y_window, 0, 900, (200 - ((300 - boxesDestenation[i]) + boxesStartNoice[i] * 100)), boxesDestenation[i]);
+            let right = mapping(y_window, 0, sl, (200 - ((300 - boxesDestenation[i]) + boxesStartNoice[i] * 100)), boxesDestenation[i]);
             right = right <= boxesDestenation[i] ? right : boxesDestenation[i];
             boxes[i].style.right = right + 'px';
-            boxes[i].style.opacity = mapping(y_window, 500, 700, 0, 100) + '%';
+            boxes[i].style.opacity = mapping(y_window, 500, 800, 0, 100) + '%';
         }
     }
     {
@@ -41,54 +43,7 @@ OS[OS.length] = function () {
         TextToFlexes[1].style.left = pos + 'px';
     }
     {
-        card.style.opacity = mapping(y_window, 2500, 2800, 0, 100) + '%';
+        card.style.opacity = mapping(y_window, 2900, 3240, 0, 100) + '%';
     }
 
-};
-
-
-// fungtion for sending msg to api with post request
-function sendMsg() {
-    // get data from input in index.html
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var msg = document.getElementById('massage').value;
-
-    let unvalid = 'false';
-    if (msg.length === 0) unvalid = 'massage';
-    if (name.length === 0) unvalid = 'name';
-    if (unvalid !== 'false') {
-        alert(`${unvalid} cannot be empty`);
-        return;
-    }
-
-    if (!validateEmail(email)) {
-        alert(`please input a valid email`);
-        return;
-    }
-
-    data = {
-        "name": name,
-        "email": email,
-        "message": msg
-    }
-    const options = {
-        headers: { "Content-Type": "application/json" },
-        method: 'POST',
-        body: JSON.stringify(data)
-    };
-
-    fetch('/send_massage', options).then(response => {
-        console.log(response);
-    });
-}
-
-//make expandeble textarea
-var textarea = document.getElementById('massage')
-textarea.scrollHeight = 100;
-var heightLimit = 500;
-
-textarea.oninput = function () {
-    textarea.style.height = ""; /* Reset the height*/
-    textarea.style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
 };
