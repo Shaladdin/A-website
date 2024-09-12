@@ -1,5 +1,0 @@
-todo:
-finish
-fix momentum scrool
-finish all the page!
-fix textarea height -done
